@@ -7,7 +7,6 @@ import { IndexComponent } from './index/index.component';
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
-import { ListingComponent } from './listing/listing.component';
 import { ListingsComponent } from './listings/listings.component';
 
 @NgModule({
@@ -17,7 +16,6 @@ import { ListingsComponent } from './listings/listings.component';
     AboutComponent,
     BlogComponent,
     ContactComponent,
-    ListingComponent,
     ListingsComponent
   ],
   imports: [
