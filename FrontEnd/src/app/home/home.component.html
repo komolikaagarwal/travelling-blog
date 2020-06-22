@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>DirectoryPlus+</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="DirectoryPlus template project">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-   
-</head>
-
-<body>
+<main>
 
     <!-- Menu -->
 
@@ -19,11 +7,11 @@
             <div class="menu_close">close</div>
             <nav class="menu_nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="listings.html">Listings</a></li>
-                    <li><a href="blog.html">News</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <li routerLink='/home'><a href="index.html">Home</a></li>
+                <li routerLink='/aboutus'><a href="#">About us</a></li>
+                <li routerLink='/listings'><a href="listings.html">Listings</a></li>
+                <li routerLink='/news'><a href="blog.html">News</a></li>
+                <li routerLink='/contact'><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="menu_link">
@@ -47,11 +35,11 @@
                 <div class="header_right d-flex flex-row align-items-center justify-content-start ml-auto">
                     <nav class="main_nav">
                         <ul class="d-flex flex-row align-items-center justify-content-start">
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="listings.html">Listings</a></li>
-                            <li><a href="blog.html">News</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li class="active" ><a href="index.html" routerLink='/home'>Home</a></li>
+                            <li ><a href="#" routerLink='/aboutus'>About us</a></li>
+                            <li ><a href="listings.html" routerLink='/listings'>Listings</a></li>
+                            <li ><a href="blog.html" routerLink='/news'>News</a></li>
+                            <li ><a href="contact.html" routerLink='/contact'>Contact</a></li>
                         </ul>
                     </nav>
                     <div class="add_listing text-center trans_200"><a href="#">+Add Listing</a></div>
@@ -82,7 +70,7 @@
 
                         <!-- Slide -->
                         <div class="slide">
-                            <div class="background_image" style="background-image:url(images/index.jpg)"></div>
+                            <div class="background_image" style="background-image:url(assets/images/index.jpg)"></div>
                             <div class="home_container">
                                 <div class="container">
                                     <div class="row">
@@ -95,8 +83,7 @@
                                                     <form action="#" class="search_form" id="search_form">
                                                         <div
                                                             class="d-flex flex-sm-row flex-column align-items-sm-start align-items-center justify-content-sm-between">
-                                                            <input type="text" class="search_input"
-                                                                placeholder="What are you looking for?"
+                                                            <input type="text" class="search_input" placeholder="What are you looking for?"
                                                                 required="required">
                                                             <button class="search_button">Search</button>
                                                         </div>
@@ -109,9 +96,10 @@
                             </div>
                         </div>
 
+
                         <!-- Slide -->
                         <div class="slide">
-                            <div class="background_image" style="background-image:url(images/index.jpg)"></div>
+                            <div class="background_image" style="background-image:url(assets/images/index.jpg)"></div>
                             <div class="home_container">
                                 <div class="container">
                                     <div class="row">
@@ -140,7 +128,7 @@
 
                         <!-- Slide -->
                         <div class="slide">
-                            <div class="background_image" style="background-image:url(images/index.jpg)"></div>
+                            <div class="background_image" style="background-image:url(assets/images/index.jpg)"></div>
                             <div class="home_container">
                                 <div class="container">
                                     <div class="row">
@@ -193,10 +181,10 @@
 
                                 <!-- Category -->
                                 <div class="category text-center">
-                                    <a href="listings.html">
-                                        <div
+                                    <a href="listings.html"routerLink = '/listings' >
+                                        <div 
                                             class="d-flex flex-md-column flex-row align-items-md-center align-items-md-start align-items-center justify-content-start">
-                                            <div class="cat_icon"><img src="images/icon_1.svg" class="svg"
+                                            <div class="cat_icon" ><img src="assets/images/icon_1.svg" class="svg"
                                                     alt="https://www.flaticon.com/authors/monkik"></div>
                                             <div class="cat_title">Restaurants</div>
                                         </div>
@@ -205,10 +193,10 @@
 
                                 <!-- Category -->
                                 <div class="category text-center">
-                                    <a href="listings.html">
+                                    <a href="listings.html" routerLink = '/listings'>
                                         <div
                                             class="d-flex flex-md-column flex-row align-items-md-center align-items-md-start align-items-center justify-content-start">
-                                            <div class="cat_icon"><img src="images/icon_2.svg" class="svg"
+                                            <div class="cat_icon"><img src="assets/images/icon_2.svg" class="svg"
                                                     alt="https://www.flaticon.com/authors/monkik"></div>
                                             <div class="cat_title">Hotels</div>
                                         </div>
@@ -217,10 +205,10 @@
 
                                 <!-- Category -->
                                 <div class="category text-center">
-                                    <a href="listings.html">
+                                    <a href="listings.html" routerLink = '/listings'>
                                         <div
                                             class="d-flex flex-md-column flex-row align-items-md-center align-items-md-start align-items-center justify-content-start">
-                                            <div class="cat_icon"><img src="images/icon_3.svg" class="svg"
+                                            <div class="cat_icon"><img src="assets/images/icon_3.svg" class="svg"
                                                     alt="https://www.flaticon.com/authors/monkik"></div>
                                             <div class="cat_title">Nightlife</div>
                                         </div>
@@ -229,10 +217,10 @@
 
                                 <!-- Category -->
                                 <div class="category text-center">
-                                    <a href="listings.html">
+                                    <a href="listings.html" routerLink = '/listings'>
                                         <div
                                             class="d-flex flex-md-column flex-row align-items-md-center align-items-md-start align-items-center justify-content-start">
-                                            <div class="cat_icon"><img src="images/icon_4.svg" class="svg"
+                                            <div class="cat_icon"><img src="assets/images/icon_4.svg" class="svg"
                                                     alt="https://www.flaticon.com/authors/monkik"></div>
                                             <div class="cat_title">Coffeeshops</div>
                                         </div>
@@ -241,10 +229,10 @@
 
                                 <!-- Category -->
                                 <div class="category text-center">
-                                    <a href="listings.html">
+                                    <a href="listings.html" routerLink = '/listings'>
                                         <div
                                             class="d-flex flex-md-column flex-row align-items-md-center align-items-md-start align-items-center justify-content-start">
-                                            <div class="cat_icon"><img src="images/icon_5.svg" class="svg"
+                                            <div class="cat_icon"><img src="assets/images/icon_5.svg" class="svg"
                                                     alt="https://www.flaticon.com/authors/monkik"></div>
                                             <div class="cat_title">Culture</div>
                                         </div>
@@ -271,7 +259,7 @@
 
                                 <!-- Location -->
                                 <div class="location">
-                                    <img src="images/location_1.jpg" alt="">
+                                    <img src="assets/images/location_1.jpg" alt="">
                                     <div class="location_title text-center">
                                         <div><a href="single.html">Amsterdam<div>+</div></a></div>
                                     </div>
@@ -279,7 +267,7 @@
 
                                 <!-- Location -->
                                 <div class="location">
-                                    <img src="images/location_2.jpg" alt="">
+                                    <img src="assets/images/location_2.jpg" alt="">
                                     <div class="location_title text-center">
                                         <div><a href="single.html">Paris<div>+</div></a></div>
                                     </div>
@@ -287,7 +275,7 @@
 
                                 <!-- Location -->
                                 <div class="location">
-                                    <img src="images/location_3.jpg" alt="">
+                                    <img src="assets/images/location_3.jpg" alt="">
                                     <div class="location_title text-center">
                                         <div><a href="single.html">Singapore<div>+</div></a></div>
                                     </div>
@@ -295,7 +283,7 @@
 
                                 <!-- Location -->
                                 <div class="location">
-                                    <img src="images/location_4.jpg" alt="">
+                                    <img src="assets/images/location_4.jpg" alt="">
                                     <div class="location_title text-center">
                                         <div><a href="single.html">Chicago<div>+</div></a></div>
                                     </div>
@@ -303,7 +291,7 @@
 
                                 <!-- Location -->
                                 <div class="location">
-                                    <img src="images/location_5.jpg" alt="">
+                                    <img src="assets/images/location_5.jpg" alt="">
                                     <div class="location_title text-center">
                                         <div><a href="single.html">New York<div>+</div></a></div>
                                     </div>
@@ -330,7 +318,7 @@
                                 <div class="grid-item grid_large">
                                     <div class="food_item">
                                         <div class="food_item_tag"><a href="#">Fusion</a></div>
-                                        <div class="background_image" style="background-image:url(images/food_1.jpg)">
+                                        <div class="background_image" style="background-image:url(assets/images/food_1.jpg)">
                                         </div>
                                     </div>
                                 </div>
@@ -339,7 +327,7 @@
                                 <div class="grid-item grid_small">
                                     <div class="food_item">
                                         <div class="food_item_tag"><a href="#">Asian</a></div>
-                                        <div class="background_image" style="background-image:url(images/food_2.jpg)">
+                                        <div class="background_image" style="background-image:url(assets/images/food_2.jpg)">
                                         </div>
                                     </div>
                                 </div>
@@ -351,14 +339,14 @@
                                             <div class="food_item">
                                                 <div class="food_item_tag"><a href="#">Breakfast</a></div>
                                                 <div class="background_image"
-                                                    style="background-image:url(images/food_3.jpg)"></div>
+                                                    style="background-image:url(assets/images/food_3.jpg)"></div>
                                             </div>
                                         </div>
                                         <div class="grid_half">
                                             <div class="food_item">
                                                 <div class="food_item_tag"><a href="#">Pizza</a></div>
                                                 <div class="background_image"
-                                                    style="background-image:url(images/food_4.jpg)"></div>
+                                                    style="background-image:url(assets/images/food_4.jpg)"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -368,7 +356,7 @@
                                 <div class="grid-item grid_medium">
                                     <div class="food_item">
                                         <div class="food_item_tag"><a href="#">Vine & Dine</a></div>
-                                        <div class="background_image" style="background-image:url(images/food_5.jpg)">
+                                        <div class="background_image" style="background-image:url(assets/images/food_5.jpg)">
                                         </div>
                                     </div>
                                 </div>
@@ -377,7 +365,7 @@
                                 <div class="grid-item grid_small">
                                     <div class="food_item">
                                         <div class="food_item_tag"><a href="#">Coffee</a></div>
-                                        <div class="background_image" style="background-image:url(images/food_6.jpg)">
+                                        <div class="background_image" style="background-image:url(assets/images/food_6.jpg)">
                                         </div>
                                     </div>
                                 </div>
@@ -386,7 +374,7 @@
                                 <div class="grid-item grid_large">
                                     <div class="food_item">
                                         <div class="food_item_tag"><a href="#">Fine Dine</a></div>
-                                        <div class="background_image" style="background-image:url(images/food_7.jpg)">
+                                        <div class="background_image" style="background-image:url(assets/images/food_7.jpg)">
                                         </div>
                                     </div>
                                 </div>
@@ -413,7 +401,7 @@
                                 <div
                                     class="icon_box d-flex flex-column align-items-center justify-content-start text-center">
                                     <div class="icon_box_num">01.</div>
-                                    <div class="icon_box_icon"><img src="images/icon_6.svg"
+                                    <div class="icon_box_icon"><img src="assets/images/icon_6.svg"
                                             alt="https://www.flaticon.com/authors/monkik"></div>
                                     <div class="icon_box_title">Choose a category</div>
                                     <div class="icon_box_text">
@@ -427,7 +415,7 @@
                                 <div
                                     class="icon_box d-flex flex-column align-items-center justify-content-start text-center">
                                     <div class="icon_box_num">02.</div>
-                                    <div class="icon_box_icon"><img src="images/icon_7.svg"
+                                    <div class="icon_box_icon"><img src="assets/images/icon_7.svg"
                                             alt="https://www.flaticon.com/authors/monkik"></div>
                                     <div class="icon_box_title">Find your pick</div>
                                     <div class="icon_box_text">
@@ -441,7 +429,7 @@
                                 <div
                                     class="icon_box d-flex flex-column align-items-center justify-content-start text-center">
                                     <div class="icon_box_num">03.</div>
-                                    <div class="icon_box_icon"><img src="images/icon_8.svg"
+                                    <div class="icon_box_icon"><img src="assets/images/icon_8.svg"
                                             alt="https://www.flaticon.com/authors/monkik"></div>
                                     <div class="icon_box_title">Go & have fun</div>
                                     <div class="icon_box_text">
@@ -459,26 +447,26 @@
 
             <!-- CTA -->
 
-            <div class="cta container_custom">
-                <div class="parallax_background" data-image-src="images/cta.jpg"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="cta_content">
-                                <div class="cta_title">
-                                    <h1>Find the best places in town!</h1>
-                                </div>
-                                <div class="cta_text">
-                                    <p>Donec cursus, risus non fermentum lacinia, felis lectus interdum velit, in
-                                        pulvinar enim justo at sem. Quisque ut semper neque. Suspendisse quam est,
-                                        consequat ullamcorper tellus et, fauci bus laoreet nibh.</p>
-                                </div>
-                                <div class="button cta_button"><a href="listings.html">See the list</a></div>
+        <div class="cta container_custom">
+            <div class="parallax_background" data-image-src="assets/images/cta.jpg"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="cta_content">
+                            <div class="cta_title">
+                                <h1>Find the best places in town!</h1>
                             </div>
+                            <div class="cta_text">
+                                <p>Donec cursus, risus non fermentum lacinia, felis lectus interdum velit, in pulvinar enim
+                                    justo at sem. Quisque ut semper neque. Suspendisse quam est, consequat ullamcorper tellus
+                                    et, fauci bus laoreet nibh.</p>
+                            </div>
+                            <div class="button cta_button"><a href="listings.html" routerLink='/listings'>See the list</a></div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
             <!-- CTA 2 -->
 
@@ -499,14 +487,14 @@
                                 </div>
                                 <div
                                     class="store_links d-flex flex-row align-items-start justify-content-start flex-wrap">
-                                    <div class="store_link"><a href="#"><img src="images/store_1.jpg" alt=""></a></div>
-                                    <div class="store_link"><a href="#"><img src="images/store_2.jpg" alt=""></a></div>
+                                    <div class="store_link"><a href="#"><img src="assets/images/store_1.jpg" alt=""></a></div>
+                                    <div class="store_link"><a href="#"><img src="assets/images/store_2.jpg" alt=""></a></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 cta_2_col">
                             <div class="cta_2_image">
-                                <img src="images/cta_2.jpg" alt="">
+                                <img src="assets/images/cta_2.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -526,31 +514,31 @@
 
                                     <!-- Slide -->
                                     <div class="slide">
-                                        <div class="client_image"><a href="#"><img src="images/client_1.jpg" alt=""></a>
+                                        <div class="client_image"  routerLink = '/listings'><img src="assets/images/client_1.jpg" alt="">
                                         </div>
                                     </div>
 
                                     <!-- Slide -->
                                     <div class="slide">
-                                        <div class="client_image"><a href="#"><img src="images/client_2.jpg" alt=""></a>
+                                        <div class="client_image"  routerLink = '/listings'><img src="assets/images/client_2.jpg" alt="">
                                         </div>
                                     </div>
 
                                     <!-- Slide -->
                                     <div class="slide">
-                                        <div class="client_image"><a href="#"><img src="images/client_3.jpg" alt=""></a>
+                                        <div class="client_image"  routerLink = '/listings'><img src="assets/images/client_3.jpg" alt="">
                                         </div>
                                     </div>
 
                                     <!-- Slide -->
                                     <div class="slide">
-                                        <div class="client_image"><a href="#"><img src="images/client_4.jpg" alt=""></a>
+                                        <div class="client_image"  routerLink = '/listings'><img src="assets/images/client_4.jpg" alt="">
                                         </div>
                                     </div>
 
                                     <!-- Slide -->
                                     <div class="slide">
-                                        <div class="client_image"><a href="#"><img src="images/client_5.jpg" alt=""></a>
+                                        <div class="client_image" routerLink = '/listings'><img src="assets/images/client_5.jpg" alt="">
                                         </div>
                                     </div>
 
@@ -580,7 +568,7 @@
                                 <nav class="footer_nav ml-md-auto order-md-2 order-1">
                                     <ul class="d-flex flex-row align-items-center justify-content-start">
                                         <li class="active"><a href="index.html">Home</a></li>
-                                        <li><a href="#">About us</a></li>
+                                        <li><a href="aboutus.html">About us</a></li>
                                         <li><a href="listings.html">Listings</a></li>
                                         <li><a href="blog.html">News</a></li>
                                         <li><a href="contact.html">Contact</a></li>
@@ -594,8 +582,5 @@
         </div>
 
     </div>
-
+</main>
    
-</body>
-
-</html>
