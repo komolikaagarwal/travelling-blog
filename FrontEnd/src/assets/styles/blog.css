@@ -44,7 +44,7 @@ body
 }
 div
 {
-	display: block;
+	display: grid;
 	position: relative;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -624,7 +624,7 @@ section
 
 .home
 {
-	height: 433px;
+	height: 857px;
 	overflow: hidden;
 }
 .home_container
