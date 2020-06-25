@@ -680,15 +680,15 @@ section
 	display: inline-block;
 	margin-top: 2px;
 }
-.listing_info
+/* .listing_info
 {
 	height: 51px;
-	background: #FFFFFF;
+	
 	border-radius: 5px;
 	padding-left: 9px;
     padding-right: 39px;
-}
-.listing_rating
+} */
+/* .listing_rating
 {
     width: 49px;
     height: 35px;
@@ -700,7 +700,7 @@ section
     text-align: center;
     border-radius: 5px;
     margin-right: 21px;
-}
+} */
 .listing_price, .listing_divider, .listing_type, .listing_status
 {
     font-size: 14px;
@@ -767,8 +767,8 @@ section
 .listing
 {
 	background: #FFFFFF;
-	padding-top: 94px;
-	padding-bottom: 96px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	border-bottom: solid 2px #e1ecf4;
 }
 .listing_text
