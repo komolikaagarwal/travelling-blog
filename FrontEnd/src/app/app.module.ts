@@ -4,19 +4,25 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { AboutusComponent } from './aboutus/aboutus.component';
+
 import { ListingsComponent } from './listings/listings.component';
 import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
+import { SignupComponent } from './signup/signup.component';
+import { SigninComponent } from './signin/signin.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutusComponent,
+ 
     ListingsComponent,
     NewsComponent,
-    ContactComponent
+    ContactComponent,
+    SignupComponent,
+    SigninComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
