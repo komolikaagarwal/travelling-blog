@@ -11,6 +11,10 @@ import { ContactComponent } from './contact/contact.component';
 import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './signin/signin.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import{FormsModule} from '@angular/forms';
+import{HttpClientModule} from '@angular/common/http'
+  
+  
 
 @NgModule({
   declarations: [
@@ -26,7 +30,9 @@ import { AboutUsComponent } from './about-us/about-us.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

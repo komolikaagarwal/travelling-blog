@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  loggedInUserName;
+  loggedInUserEmail;
+
+
   constructor() { }
 
   ngOnInit(): void {
+    this.loggedInUserEmail= localStorage.getItem
+    
   }
 
 }

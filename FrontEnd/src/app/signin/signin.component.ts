@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-signin',
@@ -8,13 +9,25 @@ import { Router } from '@angular/router';
 })
 export class SigninComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  usernameProp;
+  passProp;
+
+  constructor(private router:Router , private ds:DataService) { }
 
   ngOnInit(): void {
   }
   signin()
   {
-    this.router.navigate(['/home'])
+    this.ds.signIn({username: this.usernameProp, password: this.passProp})
+    .subscribe((response)=>{
+      if(response.status=="ok")
+      {
+        localStorage.setItem('username', this.usernameProp);
+        localStorage.setItem('email', response.data.email);
+        this.router.navigate(['/home']);
+      }
+    })
+    
   }
 
 }
