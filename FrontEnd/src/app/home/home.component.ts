@@ -14,7 +14,8 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.loggedInUserEmail= localStorage.getItem
+    this.loggedInUserEmail= localStorage.getItem('email');
+    this.loggedInUserName = localStorage.getItem('username')
     
   }
 

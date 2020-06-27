@@ -22,9 +22,11 @@ export class SigninComponent implements OnInit {
     .subscribe((response)=>{
       if(response.status=="ok")
       {
+
         localStorage.setItem('username', this.usernameProp);
         localStorage.setItem('email', response.data.email);
-        this.router.navigate(['/home']);
+        this.router.navigate(['/listings']);
+
       }
     })
     
