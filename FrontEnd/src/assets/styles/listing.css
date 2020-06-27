@@ -45,7 +45,7 @@ body
 }
 div
 {
-	display: block;
+	display: blocks;
 	position: relative;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
