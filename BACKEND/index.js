@@ -4,7 +4,7 @@ const cors  = require('cors');
 const MongoClient = require('mongodb').MongoClient;
 const ObjectId = require('mongodb').ObjectId;
 
-var client = new MongoClient('mongodb://localhost:27017/tourguide', {useNewUrlParser:true})
+var client = new MongoClient('mongodb://localhost:27017/tourguidedb', {useNewUrlParser:true})
 //var client = new MongoClient('mongodb://localhost:27017/mongodb+srv://bhumikasalvi56:123@cluster0-2krqz.mongodb.net/dbtravelling-blog?retryWrites=true&w=majority', {useNewUrlParser:true})
 // //mongodb+srv://bhumikasalvi56:<password>@cluster0-2krqz.mongodb.net/<dbname>?retryWrites=true&w=majority
  var connection;
@@ -28,7 +28,7 @@ var client = new MongoClient('mongodb://localhost:27017/tourguide', {useNewUrlPa
 
 app.post('/signup', bodyParser.json() ,(req,res)=>{  
 
-        const collection = connection.db('tourguide').collection('users');
+        const collection = connection.db('tourguidedbdb').collection('users');
 
 
         collection.insert(req.body, (err,result)=>{
@@ -48,7 +48,7 @@ app.post('/signup', bodyParser.json() ,(req,res)=>{
 
 
 
-    const collection = connection.db('tourguide').collection('users');
+    const collection = connection.db('tourguideddb').collection('users');
 
 
     collection.find(req.body).toArray((err,docs)=>{
