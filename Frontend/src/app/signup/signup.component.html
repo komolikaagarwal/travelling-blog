@@ -1,1 +1,58 @@
-<p>signup works!</p>
+<!DOCTYPE html>
+
+
+    <div class="main">
+
+        <section class="signup">
+            <!-- <img src="assets/log/images/signup-bg.jpg" alt=""> -->
+            <div class="container">
+                <div class="signup-content">
+
+
+
+
+
+
+
+
+                    <form method="POST" id="signup-form" class="signup-form"  #f="ngForm">
+                        <h2 class="form-title">Create account</h2>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="name" [(ngModel)]="nameProp" id="name" placeholder="Your Name" />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" name="email" [(ngModel)]="emailProp" id="email" placeholder="Your Email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="password" [(ngModel)]="passwordProp" id="password"
+                                placeholder="Password" />
+                            <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-input" name="repassword" [(ngModel)]="repasswordProp" id="re_password"
+                                placeholder="Repeat your password" />
+                        </div>
+                        <!-- <div class="form-group">
+                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                            <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all
+                                statements in <a href="#" class="term-service">Terms of service</a></label>
+                        </div> -->
+                        <div class="form-group">
+                            <button  class="form-submit"(click)="signUP()">Sign up</button>
+                        </div>
+                    </form>
+
+
+
+
+
+                    <p class="loginhere">
+                        Have already an account ? <a routerLink="/signin" class="loginhere-link">Login here</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+   

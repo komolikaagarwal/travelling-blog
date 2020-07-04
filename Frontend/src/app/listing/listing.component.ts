@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListingComponent implements OnInit {
 
+  loggedInUserName;
+  loggedInUserEmail;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.loggedInUserName = localStorage.getItem('name');
+    this.loggedInUserEmail = localStorage.getItem('email');
   }
 
 }
