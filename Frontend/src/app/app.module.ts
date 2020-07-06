@@ -12,7 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { HeaderComponent } from './header/header.component';
-import{FormsModule}  from '@angular/forms';
+import {FormsModule}  from '@angular/forms';
 import {HttpClientModule } from '@angular/common/http';
 
 @NgModule({

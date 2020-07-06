@@ -5,12 +5,12 @@ const MongoClient = require('mongodb').MongoClient;
 const ObjectId = require('mongodb').ObjectId;
 
 
-var client = new MongoClient('mongodb://localhost:27017/tourguide',{useNewUrlParser:true})
+// var client = new MongoClient('mongodb://localhost:27017/tourguide',{useNewUrlParser:true})
 
-// var client = new MongoClient(' mongodb + srv://komolika15:hency@tourdb.sn9an.mongodb.net/TourDb?retryWrites=true&w=majority', { useNewUrlParser: true })
+var client = new MongoClient('mongodb+srv://komolika15:komolika@tourdb.sn9an.mongodb.net/tourdb?retryWrites=true&w=majority', { useNewUrlParser: true })
 
 
-// mongodb + srv://komolika15:<password>@tourdb.sn9an.mongodb.net/<dbname>?retryWrites=true&w=majority
+// mongodb+srv://komolika15:<password>@tourdb.sn9an.mongodb.net/<dbname>?retryWrites=true&w=majority
 
 var connection;
 client.connect((err,con)=>{
@@ -32,7 +32,7 @@ app.use(cors());
 
 
 app.post('/sign up',bodyParser.json,(req,res)=>{
-    const collection = connection.db('tourguide').collection('users');
+    const collection = connection.db('tourdb').collection('users');
 
     collection.insert(req.body,(err,result)=>{
         if(!err)
@@ -49,10 +49,10 @@ app.post('/sign up',bodyParser.json,(req,res)=>{
 
 
 app.post('/sign in', bodyParser.json, (req, res) => {
-    const collection = connection.db('tourguide').collection('users');
+    const collection = connection.db('tourdb').collection('users');
 
-    collection.find(req.body).toArray ((err, docs) => {
-        if (!err) 
+    collection.find(req.body).toArray((err, docs) => {
+        if (!err && docs.length>0) 
         {
             res.send({status:'ok', data : docs});
         }
@@ -62,7 +62,7 @@ app.post('/sign in', bodyParser.json, (req, res) => {
         }
     })
 
-})
+});
 
 
 app.listen(3000,()=>{

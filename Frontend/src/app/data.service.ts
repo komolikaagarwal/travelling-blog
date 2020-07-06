@@ -9,16 +9,16 @@ export class DataService {
 
   baseURL = "http://localhost:3000";
 
-  constructor(private http:HttpClient) { }
+  constructor(private http : HttpClient) { }
 
   signUp(data):any
   {
-     return this.http.post(this.baseURL + "/sign up",data);
+     return this.http.post(this.baseURL +'/sign up',data);
   }
 
 
   signIn(data): any {
-    return this.http.post(this.baseURL + "/sign in", data);
+    return this.http.post(this.baseURL +'/sign in', data);
   }
 
 

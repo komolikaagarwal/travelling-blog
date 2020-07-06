@@ -22,7 +22,7 @@ repasswordProp;
 
       this.ds.signUp({name:this.nameProp, email:this.emailProp,password:this.passwordProp, repassword:this.repasswordProp})
       .subscribe((response)=>{
-        if(response.status=="ok")
+        if(response.status=="ok") 
         {
            alert("sign up successfully and redirected to next page");
            this.router.navigate(['/signin']);
