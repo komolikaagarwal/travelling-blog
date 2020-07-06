@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
@@ -12,10 +11,9 @@ import { ListingdetailsComponent } from './listingdetails/listingdetails.compone
 import { HomeComponent } from './home/home.component';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
-import{FormsModule} from '@angular/forms';
-import{HttpClientModule} from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
-import{ AgmCoreModule} from '@agm/core';
+import{FormsModule}  from '@angular/forms';
+import {HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,17 +24,18 @@ import{ AgmCoreModule} from '@agm/core';
     ListingComponent,
     BlogdetailsComponent,
     ListingdetailsComponent,
-    
+    HeaderComponent,
     HomeComponent,
     SigninComponent,
     SignupComponent,
-    HeaderComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule,
+    HttpClientModule
+  
     
   ],
   providers: [],

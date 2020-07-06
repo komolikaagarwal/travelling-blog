@@ -18,15 +18,15 @@ export class SigninComponent implements OnInit {
   }
   signin(){
 
-    this.ds.signIN({ name: this.nameProp,  password: this.passwordProp })
-      .subscribe((response) => {
+    this.ds.signIn({ name: this.nameProp,  password: this.passwordProp })
+       .subscribe((response) => {
         if (response.status == "ok")
         {
           localStorage.setItem('name',this.nameProp);
-          localStorage.setItem('email',response.data.email);
+          localStorage.setItem('email', response.data.email);
           this.router.navigate(['/listing']);
-        }
-      })
+         }
+       })
     
 
   }

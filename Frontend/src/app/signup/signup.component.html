@@ -18,18 +18,18 @@
                     <form method="POST" id="signup-form" class="signup-form"  #f="ngForm">
                         <h2 class="form-title">Create account</h2>
                         <div class="form-group">
-                            <input type="text" class="form-input" name="name" [(ngModel)]="nameProp" id="name" placeholder="Your Name" />
+                            <input type="text" class="form-input" name="inputname" [(ngModel)]="nameProp" id="name" placeholder="Your Name" />
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-input" name="email" [(ngModel)]="emailProp" id="email" placeholder="Your Email" />
+                            <input type="email" class="form-input" name="inputemail" [(ngModel)]="emailProp" id="email" placeholder="Your Email" />
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-input" name="password" [(ngModel)]="passwordProp" id="password"
+                            <input type="text" class="form-input" name="inputpassword" [(ngModel)]="passwordProp" id="password"
                                 placeholder="Password" />
                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-input" name="repassword" [(ngModel)]="repasswordProp" id="re_password"
+                            <input type="password" class="form-input" name="inputrepassword" [(ngModel)]="repasswordProp" id="re_password"
                                 placeholder="Repeat your password" />
                         </div>
                         <!-- <div class="form-group">
@@ -47,7 +47,7 @@
 
 
                     <p class="loginhere">
-                        Have already an account ? <a routerLink="/signin" class="loginhere-link">Login here</a>
+                        Have already an account ? <a routerLink="/" class="loginhere-link">Login here</a>
                     </p>
                 </div>
             </div>

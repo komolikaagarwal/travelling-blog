@@ -9,10 +9,10 @@ import { Router } from '@angular/router';
 })
 export class SignupComponent implements OnInit {
 
-  nameProp;
-  emailProp;
-  passwordProp;
-  repasswordProp;
+nameProp;
+emailProp;
+passwordProp;
+repasswordProp;
 
   constructor(private ds:DataService , private router:Router) { }
 
@@ -20,14 +20,14 @@ export class SignupComponent implements OnInit {
   }
   signUP(){
 
-    this.ds.signUp({name:this.nameProp, email:this.emailProp,password:this.passwordProp, repassword:this.repasswordProp})
-    .subscribe((response)=>{
-      if(response.status=="ok")
-      {
-        alert("sign up successfully and redirected to next page");
-         this.router.navigate(['/signin']);
-      }
-    })
+      this.ds.signUp({name:this.nameProp, email:this.emailProp,password:this.passwordProp, repassword:this.repasswordProp})
+      .subscribe((response)=>{
+        if(response.status=="ok")
+        {
+           alert("sign up successfully and redirected to next page");
+           this.router.navigate(['/signin']);
+        }
+     })
 
   }
 
