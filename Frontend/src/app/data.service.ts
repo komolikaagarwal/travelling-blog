@@ -21,5 +21,12 @@ export class DataService {
     return this.http.post(this.baseURL +'/sign in', data);
   }
 
+  getUsers(): any 
+  {
+
+    return this.http.get('http://localhost:3000/users');
+
+  }
+
 
 }

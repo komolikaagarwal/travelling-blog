@@ -64,6 +64,22 @@ app.post('/sign in', bodyParser.json, (req, res) => {
 
 });
 
+app.post('/add-location', bodyParser.json(), (req, res) => {
+    console.log(req.body);
+    var collection = connection.db(dbName).collection('users');
+    collection.update({ email: req.body.userEmail }, { $set: { location: req.body.location } }, { upsert: true }, (err, result) => {
+        if (!err) {
+            console.log(result);
+            res.send({ status: "ok", data: "location added" });
+        }
+        else {
+            res.send({ status: "failed", data: err });
+        }
+    });
+
+})
+
+
 
 app.listen(3000,()=>{
     console.log("server is listing on port 3000");

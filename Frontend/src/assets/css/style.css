@@ -469,6 +469,7 @@ ol {
 	width: 22.5%;
 	float: left;
 	height: 54px;
+	display: grid;
 }
 
 .hero__search__form form .select__option:before {
